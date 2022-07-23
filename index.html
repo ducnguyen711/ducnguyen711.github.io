@@ -1,0 +1,585 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <!-- Swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Document</title>
+</head>
+<body onload="slider()">
+    <header id="header">
+        <div class="top-header container" role="navigation">
+            <!-- Hotline -->
+            <div class="hotline">
+                <p>HOTLINE ĐẶT HÀNG: 09123456789</p>
+            </div>
+            <!-- Menu btn khi màn hình nhỏ -->
+            <div class="menu-btn">
+                <div>
+                    <div class="bar1"></div>
+                    <div class="bar2"></div>
+                    <div class="bar3"></div>
+                </div>
+            </div>
+            <!-- Logo -->
+            <div class="logo">
+                <p class="mb-0">/LOGO</p>
+            </div>
+            <!-- Nút trên thanh header -->
+            <div class="icon">
+                <div class="search-btn">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </div>
+                <div class="cart-btn">
+                    <i class="fa-solid fa-cart-arrow-down"></i>
+                    <div class="quantity">
+                        <span>0</span>
+                    </div>
+                </div>
+                <div class="user">
+                    <i class="fa-solid fa-user"></i>
+                </div>
+            </div>
+        </div>
+        <!-- Điều hướng -->
+        <div class="nav-links">
+            <li><a href="">TRANG CHỦ</a></li>
+            <li><a href="">GIỚI THIỆU</a></li>
+            <li><a href="">NAM</a></li>
+            <li><a href="">NỮ</a></li>
+            <li><a href="">PHỤ KIỆN KHÁC</a></li>
+            <li><a href="">TIN TỨC</a></li>
+            <li><a href="">LIÊN HỆ</a></li>
+        </div>
+        <!-- Form nhập tìm kiếm -->
+        <div class="search-form">
+            <input type="text" placeholder="Tìm kiếm ...">
+            <span>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </span>
+        </div>
+        <!-- Giỏ hàng -->
+        <div class="cart-form">
+            <div class="cart-list-product">
+                <div class="cart-product-item">
+                    <img src="./assets/img/giohang1.jpg" alt="">
+                    <div class="product-info">
+                        <div>
+                            <h2 class="product-name">Adasdasdasdad</h2>
+                            <span class="product-price">9999$</span>
+                        </div>
+                        <div class="quantity-btn">
+                            <button class="decrease-btn">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <input type="text" value="1" maxlength="12">
+                            <button class="increase-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="close-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+
+                <div class="cart-product-item">
+                    <img src="./assets/img/giohang1.jpg" alt="">
+                    <div class="product-info">
+                        <div>
+                            <h2 class="product-name">Adasdasdasfgdfgdfgddgdgdfgasdasdasdasddgddgdggdfgdad</h2>
+                            <span class="product-price">9999$</span>
+                        </div>
+                        <div class="quantity-btn">
+                            <button class="decrease-btn">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <input type="text" value="1" maxlength="12">
+                            <button class="increase-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="close-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+
+                <div class="cart-product-item">
+                    <img src="./assets/img/giohang1.jpg" alt="">
+                    <div class="product-info">
+                        <div>
+                            <h2 class="product-name">Adasdasdasdad</h2>
+                            <span class="product-price">9999$</span>
+                        </div>
+                        <div class="quantity-btn">
+                            <button class="decrease-btn">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <input type="text" value="1" maxlength="12">
+                            <button class="increase-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="close-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+
+                <div class="cart-product-item">
+                    <img src="./assets/img/giohang1.jpg" alt="">
+                    <div class="product-info">
+                        <div>
+                            <h2 class="product-name">Adasdasdasdad</h2>
+                            <span class="product-price">9999$</span>
+                        </div>
+                        <div class="quantity-btn">
+                            <button class="decrease-btn">
+                                <i class="fa-solid fa-minus"></i>
+                            </button>
+                            <input type="text" value="1" maxlength="12">
+                            <button class="increase-btn">
+                                <i class="fa-solid fa-plus"></i>
+                            </button>
+                        </div>
+                    </div>
+                    <div class="close-btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </div>
+                </div>
+            </div>
+            <div class="payment-section">
+                <div class="payment-total">
+                    <p>Tổng cộng:</p>
+                    <span>99999$</span>
+                </div>
+                <div class="payment-btn">
+                    <button class="check-out">THANH TOÁN</button>
+                    <a href="" class="cart-section">GIỎ HÀNG</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <!-- Phần slider --> 
+    <section class="slider">
+        <div class="list-slide active">
+            <img src="./assets/img/anh3.png" alt="" class="slide-img">
+            <div class="overlay">
+                <h1 class="animate__animated animate__fadeInDown" style="animation-delay: 3s">Nguyễn Văn Đức</h1>
+                <h2 class="animate__animated animate__fadeInDown" style="animation-delay: 3s">Nguyễn Văn Đức</h2>
+                <h3 class="animate__animated animate__fadeInDown" style="animation-delay: 3s">Nguyễn Văn Đức</h3>
+            </div>
+        </div>
+
+        <div class="list-slide">
+            <img src="./assets/img/anh1.jpg" alt="" class="slide-img">
+            <div class="overlay">
+                <h1 class="animate__animated animate__fadeInDown" style="animation-delay: 3s">Nguyễn Văn Đức</h1>
+                <h1 class="animate__animated animate__fadeInDown" style="animation-delay: 3s">Nguyễn Văn Đức</h1>
+                <h1 class="animate__animated animate__fadeInDown" style="animation-delay: 3s">Nguyễn Văn Đức</h1>
+            </div>
+        </div>
+
+        <div class="list-slide">
+            <img src="./assets/img/anh2.jpg" alt="" class="slide-img">
+            <div class="overlay">
+                <h1 class="animate__animated animate__fadeInDown" style="animation-delay: 3s">Nguyễn Văn Đức</h1>
+                <h1 class="animate__animated animate__fadeInDown" style="animation-delay: 3s">Nguyễn Văn Đức</h1>
+                <h1 class="animate__animated animate__fadeInDown" style="animation-delay: 3s">Nguyễn Văn Đức</h1>
+            </div>
+        </div>
+
+        <div class="next-slide">
+            <div class="progess">
+                <div class="progess-fill active"></div>
+            </div>
+
+            <div class="progess">
+                <div class="progess-fill"></div>
+            </div>
+
+            <div class="progess">
+                <div class="progess-fill"></div>
+            </div>
+        </div>
+    </section>
+
+    <section class="main container">
+        <div class="section-content">
+            <div class="heading-section">
+                <a href="" class="heading-content">HÀNG MỚI</a>
+                <p class="sub-heading-content">
+                    <a href="">ADIDAS</a> / 
+                    <a href="">NIKE</a> /
+                    <a href="">MLB</a> /
+                    <a href="">BALENCIAGA</a>
+                </p>
+            </div>
+            <div class="list-new-arrival swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="new-arrival-item swiper-slide">
+                        <a href="">
+                            <div class="new-arrival-img">
+                                <img src="./assets/img/anh0.jpg" alt="">
+                            </div>
+                            <div class="new-arrival-info">
+                                <h1 class="new-arrival-brand">ADIDAS</h1>
+                                <h1 class="new-arrival-name">asdadsasd</h1>
+                                <p class="new-arrival-price">99đ</p>
+                                <div class="details-product animate__animated animate__fadeInUp">
+                                    <a href="">CHI TIẾT</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="new-arrival-item swiper-slide">
+                        <a href="">
+                            <div class="new-arrival-img">
+                                <img src="./assets/img/giohang1.jpg" alt="">
+                            </div>
+                            <div class="new-arrival-info">
+                                <h1 class="new-arrival-brand">ADIDAS</h1>
+                                <h1 class="new-arrival-name">asdadsasd</h1>
+                                <p class="new-arrival-price">99đ</p>
+                                <div class="details-product animate__animated animate__fadeInUp">
+                                    <a href="">CHI TIẾT</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="new-arrival-item swiper-slide">
+                        <a href="">
+                            <div class="new-arrival-img">
+                                <img src="./assets/img/anh1.jpg" alt="">
+                            </div>
+                            <div class="new-arrival-info">
+                                <h1 class="new-arrival-brand">ADIDAS</h1>
+                                <h1 class="new-arrival-name">asdadsasd</h1>
+                                <p class="new-arrival-price">99đ</p>
+                                <div class="details-product animate__animated animate__fadeInUp">
+                                    <a href="">CHI TIẾT</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+
+                    <div class="new-arrival-item swiper-slide">
+                        <a href="">
+                            <div class="new-arrival-img">
+                                <img src="./assets/img/anh2.jpg" alt="">
+                            </div>
+                            <div class="new-arrival-info">
+                                <h1 class="new-arrival-brand">ADIDAS</h1>
+                                <h1 class="new-arrival-name">asdadsasd</h1>
+                                <p class="new-arrival-price">99đ</p>
+                                <div class="details-product animate__animated animate__fadeInUp">
+                                    <a href="">CHI TIẾT</a>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="all-new-arrival">
+                    <div class="all-btn">
+                        <a href="">
+                            XEM TẤT CẢ HÀNG MỚi
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-brand row">
+                <div class="brand-item col-lg-6 col-md-6">
+                    <img src="./assets/img/logo1.jpg" alt="">
+                    <div class="brand-info">
+                        <h1 class="brand-name">ADIDAS</h1>
+                        <div class="see-more-btn">
+                            <a href="">XEM THÊM</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brand-item col-lg-6 col-md-6">
+                    <img src="./assets/img/logo2.jpg" alt="">
+                    <div class="brand-info">
+                        <h1 class="brand-name">BALENCIAGA</h1>
+                        <div class="see-more-btn">
+                            <a href="">XEM THÊM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="list-brand row">
+                <div class="brand-item col-lg-6 col-md-6">
+                    <img src="./assets/img/logo3.jpg" alt="">
+                    <div class="brand-info">
+                        <h1 class="brand-name">MLB</h1>
+                        <div class="see-more-btn">
+                            <a href="">XEM THÊM</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="brand-item col-lg-6 col-md-6">
+                    <img src="./assets/img/logo4.jpg" alt="">
+                    <div class="brand-info">
+                        <h1 class="brand-name">NIKE</h1>
+                        <div class="see-more-btn">
+                            <a href="">XEM THÊM</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="section-content">
+            <div class="heading-section">
+                <a href="" class="heading-content">DANH SÁCH SẢN PHẨM</a>
+                <p class="sub-heading-content">
+                    <a href="">GIÀY THỂ THAO</a> / 
+                    <a href="">GIÀY ...</a> /
+                    <a href="">GIÀY ...</a> /
+                    <a href="">GIÀY ...</a>
+                </p>
+            </div>
+            <div class="list-product">
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="product-item new-arrival-item">
+                            <a href="">
+                                <div class="new-arrival-img">
+                                    <img src="./assets/img/anh0.jpg" alt="">
+                                </div>
+                                <div class="new-arrival-info">
+                                    <h1 class="new-arrival-brand">ADIDAS</h1>
+                                    <h1 class="new-arrival-name">asdadsasd</h1>
+                                    <p class="new-arrival-price">99đ</p>
+                                    <div class="details-product animate__animated animate__fadeInUp">
+                                        <a href="">CHI TIẾT</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="product-item new-arrival-item">
+                            <a href="">
+                                <div class="new-arrival-img">
+                                    <img src="./assets/img/anh0.jpg" alt="">
+                                </div>
+                                <div class="new-arrival-info">
+                                    <h1 class="new-arrival-brand">ADIDAS</h1>
+                                    <h1 class="new-arrival-name">asdadsasd</h1>
+                                    <p class="new-arrival-price">99đ</p>
+                                    <div class="details-product animate__animated animate__fadeInUp">
+                                        <a href="">CHI TIẾT</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="product-item new-arrival-item">
+                            <a href="">
+                                <div class="new-arrival-img">
+                                    <img src="./assets/img/anh0.jpg" alt="">
+                                </div>
+                                <div class="new-arrival-info">
+                                    <h1 class="new-arrival-brand">ADIDAS</h1>
+                                    <h1 class="new-arrival-name">asdadsasd</h1>
+                                    <p class="new-arrival-price">99đ</p>
+                                    <div class="details-product animate__animated animate__fadeInUp">
+                                        <a href="">CHI TIẾT</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="product-item new-arrival-item">
+                            <a href="">
+                                <div class="new-arrival-img">
+                                    <img src="./assets/img/anh0.jpg" alt="">
+                                </div>
+                                <div class="new-arrival-info">
+                                    <h1 class="new-arrival-brand">ADIDAS</h1>
+                                    <h1 class="new-arrival-name">asdadsasd</h1>
+                                    <p class="new-arrival-price">99đ</p>
+                                    <div class="details-product animate__animated animate__fadeInUp">
+                                        <a href="">CHI TIẾT</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>                  
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-3">
+                        <div class="product-item new-arrival-item">
+                            <a href="">
+                                <div class="new-arrival-img">
+                                    <img src="./assets/img/anh0.jpg" alt="">
+                                </div>
+                                <div class="new-arrival-info">
+                                    <h1 class="new-arrival-brand">ADIDAS</h1>
+                                    <h1 class="new-arrival-name">asdadsasd</h1>
+                                    <p class="new-arrival-price">99đ</p>
+                                    <div class="details-product animate__animated animate__fadeInUp">
+                                        <a href="">CHI TIẾT</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="product-item new-arrival-item">
+                            <a href="">
+                                <div class="new-arrival-img">
+                                    <img src="./assets/img/anh0.jpg" alt="">
+                                </div>
+                                <div class="new-arrival-info">
+                                    <h1 class="new-arrival-brand">ADIDAS</h1>
+                                    <h1 class="new-arrival-name">asdadsasd</h1>
+                                    <p class="new-arrival-price">99đ</p>
+                                    <div class="details-product animate__animated animate__fadeInUp">
+                                        <a href="">CHI TIẾT</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="product-item new-arrival-item">
+                            <a href="">
+                                <div class="new-arrival-img">
+                                    <img src="./assets/img/anh0.jpg" alt="">
+                                </div>
+                                <div class="new-arrival-info">
+                                    <h1 class="new-arrival-brand">ADIDAS</h1>
+                                    <h1 class="new-arrival-name">asdadsasd</h1>
+                                    <p class="new-arrival-price">99đ</p>
+                                    <div class="details-product animate__animated animate__fadeInUp">
+                                        <a href="">CHI TIẾT</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="col-md-6 col-lg-3">
+                        <div class="product-item new-arrival-item">
+                            <a href="">
+                                <div class="new-arrival-img">
+                                    <img src="./assets/img/anh0.jpg" alt="">
+                                </div>
+                                <div class="new-arrival-info">
+                                    <h1 class="new-arrival-brand">ADIDAS</h1>
+                                    <h1 class="new-arrival-name">asdadsasd</h1>
+                                    <p class="new-arrival-price">99đ</p>
+                                    <div class="details-product animate__animated animate__fadeInUp">
+                                        <a href="">CHI TIẾT</a>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                    </div>                  
+                </div>
+            </div>
+            <div class="all-new-arrival">
+                <div class="all-btn">
+                    <a href="">
+                        XEM TẤT CẢ SẢN PHẨM
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer id="footer">
+        <div class="container">
+            <div class="top-footer row">
+                <div class="footer-content col-md-4">
+                    <div>                       
+                        <a href="" class="footer-logo">
+                            <p>/LOGO</p>
+                        </a>
+                        <p class="icon-footer phone-number">
+                            <i class="fa-solid fa-phone"></i> <a href="">0912345678</a>
+                        </p>
+        
+                        <p class="icon-footer mail">
+                            <i class="fa-solid fa-envelope"></i> <a href="">0912345678</a>
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-content col-md-4">
+                    <div>
+                        <h1 class="heading-footer">
+                            LIÊN HỆ
+                        </h1>
+                        <p class="icon-footer">
+                            <i class="fa-solid fa-location-dot"></i> 45 Núi Trúc, Ba Đình, HN
+                        </p>
+        
+                        <p class="icon-footer">
+                            <i class="fa-solid fa-location-dot"></i> 19 Hồ Đắc Di, Đống Đa, HN
+                        </p>
+    
+                        <p class="icon-footer">
+                            <i class="fa-solid fa-truck"></i> Ship COD toàn quốc
+                        </p>
+    
+                        <p class="icon-footer">
+                            <i class="fa-solid fa-gift"></i> FREESHIP đơn hàng từ 500.000đ
+                        </p>
+                    </div>
+                </div>
+
+                <div class="footer-content col-md-4">
+                    <div>                       
+                        <h1 class="heading-footer">
+                            CHÍNH SÁCH
+                        </h1>
+                        <p class="policy">
+                            <a href="">CHÍNH SÁCH THÀNH VIÊN</a>
+                        </p>
+    
+                        <p class="policy">
+                            <a href="">CHÍNH SÁCH ĐỔI TRẢ</a>
+                        </p>
+    
+                        <p class="policy">
+                            <a href="">CHÍNH SÁCH VẬN CHUYỂN</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="bottom-footer">
+            <p><i class="fa-solid fa-copyright"></i> Bản quyền thuộc về STORE</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
